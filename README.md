@@ -10,6 +10,8 @@ A pasta avaliacao_env corresponde a um ambiente virtual criado com o módulo -ve
 
 O script que contém a resposta corresponde a **fibonacci_questao1.py** disponível em *avaliacao_env/scripts_respostas/*.
 
+O script recebe a entrada pelo terminal (número n) e calcula o n-ésimo valor correspondente a sequência de fibonacci. Para o cálculo do valor utilizou-se uma função recursiva que realiza outras chamadas da própria função para calcular termos anteriores. Essas chamadas são empilhadas e desempilhadas calculando os termos até atingir 0 e 1 (valores iniciais da sequência).
+
 Exemplo para executá-lo:
 > python fibonacci_questao1.py 9
 
@@ -29,6 +31,8 @@ A resposta corresponde a questão se encontra em um arquivo texto em **questao2.
 ### - Escrever os dados encontrados em arquivos JSON na raiz do projeto.
 
 O script que contém a resposta corresponde a **starWars_questao3.py** disponível em *avaliacao_env/Scripts/scripts_questoes/*.
+
+Para realizar a requisição utilizou-se a biblioteca *requests* do Python que oferece a maioria das funcionalidades do protocolo HTTP. As requisições foram feitas a API https://swapi.dev/ que retornaram arquivos JSON. Estes arquivos foram manipulados e as respostas foram armazenadas em outro aquivo JSON denominado 'respostas.json'.
 
 Exemplo para executá-lo:
 > python starWars_questao3.py
