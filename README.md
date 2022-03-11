@@ -30,7 +30,7 @@ A resposta corresponde a questão se encontra em um arquivo texto em **questao2.
 ### - Consultar quais planetas possuem 5 moradores (residents) ou mais.
 ### - Escrever os dados encontrados em arquivos JSON na raiz do projeto.
 
-O script que contém a resposta corresponde a **starWars_questao3.py** disponível em *avaliacao_env/Scripts/scripts_questoes/*.
+O script que contém a resposta corresponde a **starWars_questao3.py** disponível em *avaliacao_env/scripts_respostas/*.
 
 Para realizar a requisição utilizou-se a biblioteca *requests* do Python que oferece a maioria das funcionalidades do protocolo HTTP. As requisições foram feitas a API https://swapi.dev/ que retornaram arquivos JSON. Estes arquivos foram manipulados e as respostas foram armazenadas em outro aquivo JSON denominado 'respostas.json'.
 
