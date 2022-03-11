@@ -1,0 +1,3 @@
+A execução da função demora muito para gerar uma saída ou não gera uma. Isso ocorre porque sua implementação recursiva consiste em chamadas da própria função para calcular termos anteriores. Essas chamadas são empilhadas e desempilhadas calculando os termos até atingir 0 e 1 (valores iniciais da sequência).
+Logo, para cada chamada da função, duas são empilhadas. No entanto, com o aumento da entrada (valor n), o número de chamadas recursivas aumenta exponencialmente e, consequentemente, corre-se o risco de um estouro de pilha, ou seja, se o ponteiro de pilha de chamadas exceder o limite de pilha (erro stack overflow).
+Este é o caso que ocorre com a entrada n=50, no qual as chamadas da função são chamadas bilhões de vezes e gera-se um estouro de pilha (stack overflow).
